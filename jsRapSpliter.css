@@ -1,0 +1,23 @@
+.rapSpliter{
+	position: relative;
+	height:200px;
+	border: solid 1px #bab;
+	overflow: hidden;
+}
+.panel1{
+	position: absolute;
+	left:0px;
+	height:100%;
+}
+.panel2{
+	position: absolute;
+	right:0px;
+	height:100%;
+}
+
+.spliter{
+	position: absolute;
+	height:100%;
+	cursor:col-resize;
+	border: solid 1px #bab;
+}
