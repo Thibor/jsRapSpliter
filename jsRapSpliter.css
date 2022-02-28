@@ -1,23 +1,43 @@
 .rapSpliter{
 	position: relative;
-	height:200px;
 	border: solid 1px #bab;
-	overflow: hidden;
 }
-.panel1{
-	position: absolute;
+.panel1H{
 	left:0px;
-	height:100%;
 }
-.panel2{
-	position: absolute;
+.panel2H{
 	right:0px;
+}
+.panel1V{
+	top:0px;
+}
+.panel2V{
+	bottom:0px;
+}
+.panel1H,
+.panel2H{
 	height:100%;
 }
-
-.spliter{
+.panel1V,
+.panel2V{
+	width:100%;
+}
+.panel1H,
+.panel2H,
+.panel1V,
+.panel2V{
+	overflow: hidden;
+	position: absolute;
+}
+.spliterH{
 	position: absolute;
 	height:100%;
 	cursor:col-resize;
+	border: solid 1px #bab;
+}
+.spliterV{
+	position: absolute;
+	width:100%;
+	cursor:row-resize;
 	border: solid 1px #bab;
 }
