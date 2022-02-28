@@ -1,43 +1,52 @@
-.rapSpliter{
+.rapSpliter {
 	position: relative;
 	border: solid 1px #bab;
 }
-.panel1H{
-	left:0px;
+
+.panel1V {
+	left: 0px;
 }
-.panel2H{
-	right:0px;
+
+.panel2V {
+	right: 0px;
 }
-.panel1V{
-	top:0px;
+
+.panel1H {
+	top: 0px;
 }
-.panel2V{
-	bottom:0px;
+
+.panel2H {
+	bottom: 0px;
 }
-.panel1H,
-.panel2H{
-	height:100%;
-}
+
 .panel1V,
-.panel2V{
-	width:100%;
+.panel2V {
+	height: 100%;
 }
+
+.panel1H,
+.panel2H {
+	width: 100%;
+}
+
 .panel1H,
 .panel2H,
 .panel1V,
-.panel2V{
+.panel2V {
 	overflow: hidden;
 	position: absolute;
 }
-.spliterH{
+
+.spliterV {
 	position: absolute;
-	height:100%;
-	cursor:col-resize;
+	height: 100%;
+	cursor: col-resize;
 	border: solid 1px #bab;
 }
-.spliterV{
+
+.spliterH {
 	position: absolute;
-	width:100%;
-	cursor:row-resize;
+	width: 100%;
+	cursor: row-resize;
 	border: solid 1px #bab;
 }

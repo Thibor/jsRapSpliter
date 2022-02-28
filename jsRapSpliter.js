@@ -10,9 +10,9 @@ $(window).resize(function () {
 		return this.each(function () {
 			this.opt = $.extend({
 				height: '200px',
-				horizontal: true,
+				horizontal: false,
 				position: 0.5,
-				spliterWidth: 4
+				spliterWidth: 8.0
 			}, options);
 			let base = this;
 			let active = false;
@@ -47,15 +47,15 @@ $(window).resize(function () {
 
 			this.UpdatePosition = function (e) {
 				if (this.opt.horizontal) {
-					let ph = (e.clientX - $(base)[0].getBoundingClientRect().left) / $(base).width();
+					let ph = (e.clientY - $(base)[0].getBoundingClientRect().top) / $(base).height();
 					this.SetPositionH(ph);
 				} else {
-					let pv = (e.clientY - $(base)[0].getBoundingClientRect().top) / $(base).height();
+					let pv = (e.clientX - $(base)[0].getBoundingClientRect().left) / $(base).width();
 					this.SetPositionV(pv);
 				}
 			}
 
-			this.SetPositionH = function (pro) {
+			this.SetPositionV = function (pro) {
 				base.opt.position = pro;
 				let w = $(base).width();
 				let hsw = base.opt.spliterWidth / 2.0;
@@ -71,7 +71,7 @@ $(window).resize(function () {
 				$(base.spliter).css({ left: x1 + 'px', right: x2 + 'px' });
 			}
 
-			this.SetPositionV = function (pro) {
+			this.SetPositionH = function (pro) {
 				base.opt.position = pro;
 				let h = $(base).height();
 				let hsw = base.opt.spliterWidth / 2.0;

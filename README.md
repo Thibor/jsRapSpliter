@@ -10,6 +10,6 @@ Spliter jquery plugin
 Option | Type | Default | Description
 ------ | ---- | ------- | -----------
 height | string | '200px' | Height of main div
-horizontal | bool | true | Orientation of spliter
+horizontal | bool | false | Orientation of spliter
 position | float | 0.5 | Size of first panel
 spliterWidth | float | 8.0 | Width of spliter bar
