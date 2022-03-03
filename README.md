@@ -1,4 +1,4 @@
-# jsRapStopwatch
+# jsRapSpliter
 Spliter jquery plugin
 
 #### Demo
